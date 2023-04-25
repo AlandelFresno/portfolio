@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material';
+import React, { MouseEventHandler } from 'react';
+import { Box, Button, Typography } from '@mui/material';
 
-const Home = () => {
-
-
-  return(
-    <Box height='100%' display='flex' justifyContent='center' alignItems='center' sx={{backgroundColor: 'gray'}}>
-
+const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
+  return (
+    <Box height="100%">
+      <Button onClick={props.toggleTheme as any}>Toggle Theme</Button>
+      <Typography color="primary"> testing </Typography>
     </Box>
   );
 };
