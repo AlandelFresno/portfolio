@@ -1,7 +1,6 @@
 import React, { MouseEventHandler, useState } from 'react';
 import {
   Box,
-  Button,
   Divider,
   FormControlLabel,
   SwipeableDrawer,
@@ -25,10 +24,14 @@ const Navbar = (props: {
   };
 
   return (
-    <Box position='fixed'>
+    <Box position="fixed">
       <MenuIcon
         onClick={handleMenuClick}
-        sx={{ transform: 'scale(1.5)', marginTop: '1rem', marginRight: '1rem' }}
+        sx={{
+          transform: 'scale(1.5)',
+          marginTop: '1rem',
+          marginRight: '2.5rem',
+        }}
       />
       <SwipeableDrawer
         onOpen={() => {}}
@@ -39,8 +42,9 @@ const Navbar = (props: {
         <ChevronRightIcon
           sx={{
             alignSelf: 'center',
-            transform: 'scale(1.1)',
-            marginBottom: '0.25rem',
+            transform: 'scale(1.5)',
+            marginTop: '1rem',
+            marginBottom: '0.75rem',
           }}
           onClick={handleMenuClick}
         />
