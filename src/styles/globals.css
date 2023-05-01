@@ -1,3 +1,8 @@
+:root {
+  --animation-time: 25s;
+  --animation-degrees: 45deg;
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -6,4 +11,22 @@ html, body {
 #__next {
   height: 100%;
   width: 100%;
+}
+
+#background__animation {
+  background: linear-gradient(var(--animation-degrees), black, red, blue, transparent);
+  animation: bg-gradient var(--animation-time) ease infinite alternate;
+  background-size: 200%, 200%;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
