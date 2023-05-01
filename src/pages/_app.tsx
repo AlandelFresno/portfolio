@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [selectedTheme]);
 
   return (
-    <ThemeProvider theme={activeTheme} >
+    <ThemeProvider theme={activeTheme}>
       <CssBaseline />
       <Component {...pageProps} toggleTheme={toggleTheme} />
     </ThemeProvider>
