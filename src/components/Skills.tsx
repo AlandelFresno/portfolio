@@ -20,12 +20,12 @@ const Skills = () => {
           <Typography variant="h4">Skills</Typography>
         </Box>
         <List>
-          <ListItem> JavaScript</ListItem>
-          <ListItem> TypeScript</ListItem>
-          <ListItem> React</ListItem>
-          <ListItem> NextJS</ListItem>
-          <ListItem> NodeJS</ListItem>
-          <ListItem> ExpressJS</ListItem>
+          <ListItem>JavaScript</ListItem>
+          <ListItem>TypeScript</ListItem>
+          <ListItem>React</ListItem>
+          <ListItem>NextJS</ListItem>
+          <ListItem>NodeJS</ListItem>
+          <ListItem>ExpressJS</ListItem>
         </List>
       </Box>
     </Box>
