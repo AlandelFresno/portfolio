@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 import Bio from '@/components/Bio';
+import Skills from '@/components/Skills';
 
 const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
   return (
@@ -12,6 +13,7 @@ const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
       </Box>
       <Header />
       <Bio />
+      <Skills />
     </Box>
   );
 };

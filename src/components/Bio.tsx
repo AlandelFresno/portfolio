@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Typography } from '@mui/material';
 
 const Bio = () => {
   return (
@@ -7,7 +7,7 @@ const Bio = () => {
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      marginTop="2rem"
+      marginTop="6rem"
       marginBottom="2rem"
     >
       <Box maxWidth="60%" alignSelf="center">
