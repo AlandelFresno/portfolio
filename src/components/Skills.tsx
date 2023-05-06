@@ -8,7 +8,6 @@ const Skills = () => {
       flexDirection="column"
       justifyContent="center"
       marginTop="5rem"
-      marginBottom="2rem"
     >
       <Box
         display="flex"
@@ -16,8 +15,8 @@ const Skills = () => {
         width="60%"
         alignSelf="center"
       >
-        <Box>
-          <Typography variant="h4">Skills</Typography>
+        <Box display='flex' alignItems='center'>
+          <Typography variant="h3">Skills</Typography>
         </Box>
         <List>
           <ListItem>JavaScript</ListItem>

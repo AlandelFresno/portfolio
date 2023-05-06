@@ -8,7 +8,6 @@ const Bio = () => {
       flexDirection="column"
       justifyContent="center"
       marginTop="6rem"
-      marginBottom="2rem"
     >
       <Box maxWidth="60%" alignSelf="center">
         <Typography>
