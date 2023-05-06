@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 import Bio from '@/components/Bio';
 import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
+
 
 const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
   return (
@@ -14,6 +16,8 @@ const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
       <Header />
       <Bio />
       <Skills />
+      {/* <Where I worked /> */}
+      <Projects />
     </Box>
   );
 };
