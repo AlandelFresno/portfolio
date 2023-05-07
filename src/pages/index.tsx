@@ -6,6 +6,7 @@ import Bio from '@/components/Bio';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 
 const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
@@ -20,6 +21,7 @@ const Home = (props: { toggleTheme: MouseEventHandler<HTMLAnchorElement> }) => {
       {/* <Where I worked /> */}
       <Projects />
       <Contact />
+      <Footer />
     </Box>
   );
 };
