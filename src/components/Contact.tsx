@@ -4,13 +4,15 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <Box>
-      <Typography> Contact me</Typography>
-      <Typography> Alandelfresno2@gmail.com</Typography>
-      <Typography> Linkedin:</Typography>
-      <Typography> Alan del Fresno</Typography>
-      <Typography> Github:</Typography>
-      <Typography> Alan del Fresno</Typography>
+    <Box display="flex" justifyContent="center" marginTop="6rem">
+      <Box display="flex" flexDirection="column">
+        <Typography>Contact me</Typography>
+        <Typography>Alandelfresno2@gmail.com</Typography>
+        <Typography>Linkedin:</Typography>
+        <Typography>Alan del Fresno</Typography>
+        <Typography>Github:</Typography>
+        <Typography>Alan del Fresno</Typography>
+      </Box>
     </Box>
   );
 };

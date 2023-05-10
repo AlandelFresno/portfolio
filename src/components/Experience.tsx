@@ -3,7 +3,11 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <Box>
+    <Box
+      display="flex"
+      justifyContent="center"
+      marginTop="6rem"
+    >
       <Typography>Experience</Typography>
     </Box>
   );
