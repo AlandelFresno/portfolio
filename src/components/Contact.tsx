@@ -1,17 +1,31 @@
-import { Box } from '@mui/material';
-import Typography from '@mui/material/Typography';
 import React from 'react';
+import { Box, Link, Typography } from '@mui/material';
+import { LinkedIn, GitHub } from '@mui/icons-material';
 
 const Contact = () => {
   return (
     <Box display="flex" justifyContent="center" marginTop="6rem">
       <Box flexDirection="column">
-        <Typography>Contact me</Typography>
-        <Typography>Alandelfresno2@gmail.com</Typography>
-        <Typography>Linkedin:</Typography>
-        <Typography>Alan del Fresno</Typography>
-        <Typography>Github:</Typography>
-        <Typography>Alan del Fresno</Typography>
+        <Typography variant="h3">Contact me:</Typography>
+        <Box display="flex" justifyContent="center" marginTop="2rem">
+          <Typography variant="h5">Alandelfresno2@gmail.com</Typography>
+        </Box>
+        <Box display="flex" justifyContent="space-around" marginTop="1rem">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/alandelfresno/"
+            style={{ color: 'inherit', transform: 'scale(1.7)' }}
+          >
+            <LinkedIn />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/AlandelFresno"
+            style={{ color: 'inherit', transform: 'scale(1.5)' }}
+          >
+            <GitHub />
+          </a>
+        </Box>
       </Box>
     </Box>
   );
