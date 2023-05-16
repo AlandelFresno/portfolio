@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import CarouselComponent from './CarouselComponent';
 
 const Projects = () => {
   const test = [
@@ -22,8 +23,8 @@ const Projects = () => {
 
   return (
     <Box display="flex" justifyContent="center" marginTop="4rem">
-      <Box maxWidth="80%" display='flex' justifyContent="center" >
-        {test.map(() => (
+        <CarouselComponent />
+        {/* {test.map(() => (
           <Box height="450px" width="350px" border="solid" borderColor="red">
             <Box height="250px" border="solid" borderColor="blue"></Box>
             <Box marginTop="1rem">
@@ -35,8 +36,7 @@ const Projects = () => {
               </Typography>
             </Box>
           </Box>
-        ))}
-      </Box>
+        ))} */}
     </Box>
   );
 };
