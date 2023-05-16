@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, List, ListItem, Typography, styled } from '@mui/material';
+import { Box, Typography, styled } from '@mui/material';
 
 const ResponsiveSkills = styled('div')(({ theme }) => ({
   display: 'flex',
