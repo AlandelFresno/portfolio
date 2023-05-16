@@ -1,5 +1,19 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, styled } from '@mui/material';
 import React from 'react';
+
+const ResponsiveExperience = styled('div')(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'space-around',
+  width: '60%',
+  alignSelf: 'center',
+  [theme.breakpoints.down(1020)]: {
+    flexDirection: 'column-reverse',
+    alignItems: 'center',
+    h3: {
+      paddingBottom: '3rem'
+    }
+  },
+}));
 
 const Experience = () => {
   return (
@@ -10,12 +24,7 @@ const Experience = () => {
       marginTop="10rem"
       marginBottom="15rem"
     >
-      <Box
-        display="flex"
-        justifyContent="space-around"
-        width="60%"
-        alignSelf="center"
-      >
+      <ResponsiveExperience>
         <Box marginBottom="0.5rem" marginLeft="0.5rem" marginRight="0.5rem">
           <Typography variant="h4">Full Stack Developer</Typography>
           <Box display="flex">
@@ -34,7 +43,7 @@ const Experience = () => {
         <Typography variant="h3" justifySelf="center">
           Experience
         </Typography>
-      </Box>
+      </ResponsiveExperience>
     </Box>
   );
 };
