@@ -10,8 +10,8 @@ const ResponsiveExperience = styled('div')(({ theme }) => ({
     flexDirection: 'column-reverse',
     alignItems: 'center',
     h3: {
-      paddingBottom: '3rem'
-    }
+      paddingBottom: '3rem',
+    },
   },
 }));
 

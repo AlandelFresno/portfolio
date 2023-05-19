@@ -21,8 +21,12 @@ const Footer = () => {
         <Typography> Email:</Typography>
         <Typography> alandelfresno2@gmail.com</Typography>
       </Box>
-      <Box >
-        <KeyboardArrowUpIcon onClick={scrollToTop} cursor="pointer"  transform='scale(2)'/>
+      <Box>
+        <KeyboardArrowUpIcon
+          onClick={scrollToTop}
+          cursor="pointer"
+          transform="scale(2)"
+        />
       </Box>
     </Box>
   );

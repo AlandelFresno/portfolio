@@ -24,7 +24,7 @@ const Bio = () => {
           challenges. I am also a strong communicator and able to explain
           technical concepts to non-technical stakeholders.
         </Typography>
-        <Typography marginTop='1rem'>
+        <Typography marginTop="1rem">
           My passion for web development is fueled by my desire to create
           solutions that are not only functional but also user-friendly and
           aesthetically pleasing. I am always seeking to improve my skills and

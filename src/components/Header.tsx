@@ -3,9 +3,6 @@ import { Box, Typography } from '@mui/material';
 import AnimationContainer from './AnimationContainer';
 
 const Header = () => {
-
-  
-
   return (
     <Box
       width="100%"

@@ -7,7 +7,7 @@ const Projects = () => {
     <Box
       display="flex"
       justifyContent="center"
-      sx={{height: {xs: '100%', sm: '55%'}}}
+      sx={{ height: { xs: '100%', sm: '55%' } }}
       width="100%"
     >
       <CarouselComponent />
