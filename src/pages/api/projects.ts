@@ -1,12 +1,39 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { pool } from "../../config/db";
+import { pool } from '../../config/db';
 
+const getProjects = async (req: NextApiRequest, res: NextApiResponse) => {
+  switch (req.method) {
+    case 'GET':
+      const [resultGet] = await pool.query('SELECT * FROM projects');
+      console.log(resultGet);
+      res.json({ hello: 'worlddddd', result: resultGet });
+      break;
 
-const getProjects = async(req: NextApiRequest, res: NextApiResponse) => {
+    case 'POST':
+      const { name, description, image } = req.body;
+      try {
+        const [resultPost] = await pool.query('INSERT INTO projects SET ?', {
+          name,
+          description,
+          image,
+        });
+        res
+          .status(200)
+          // @ts-ignore
+          .json({ name, description, image, id: resultPost.insertId });
+      } catch (error: any) {
+        return res.status(500).json({ error: error.message });
+      }
+      break;
 
-  const result = await pool.query('SELECT NOW()')
+    default:
+      res
+        .status(504)
+        .json({ message: 'Wrong method utilized, try to use GET or POST' });
+      break;
+  }
 
-  res.json({ hello: 'world', result: result[0] });
+  return;
 };
 
 export default getProjects;
