@@ -28,13 +28,6 @@ const Header = () => {
       >
         Full Stack Developer
       </Typography>
-      <Typography
-        variant="h4"
-        component="h4"
-        sx={{ fontSize: { xs: '1rem', md: '1.5rem' } }}
-      >
-        Testing Colors
-      </Typography>
     </Box>
   );
 };
