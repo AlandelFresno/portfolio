@@ -22,7 +22,7 @@ const Experience = () => {
       flexDirection="column"
       justifyContent="center"
       marginTop="10rem"
-      marginBottom="15rem"
+      marginBottom="8rem"
     >
       <ResponsiveExperience>
         <Box marginBottom="0.5rem" marginLeft="0.5rem" marginRight="0.5rem">
