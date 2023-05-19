@@ -22,7 +22,7 @@ const getProjects = async (req: NextApiRequest, res: NextApiResponse) => {
           // @ts-ignore
           .json({ name, description, image, id: resultPost.insertId });
       } catch (error: any) {
-        return res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message });
       }
       break;
 
