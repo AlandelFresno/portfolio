@@ -37,11 +37,6 @@ const CarouselComponent = () => {
           color: 'black',
         },
       }}
-      //   navButtonsWrapperProps={{
-      //     style: {
-      //
-      //     }
-      // }}
     >
       <Box display="flex" justifyContent="center">
         {projects.map((item, i) => (
