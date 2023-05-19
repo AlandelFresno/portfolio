@@ -7,7 +7,7 @@ import NGO from '../assets/images/NGO.PNG';
 const Item = ({
   item,
 }: {
-  item: { id: number; name: string; description: string };
+  item: { id: number; name: string; description: string; page: string };
 }) => {
   return (
     <Box
@@ -17,13 +17,18 @@ const Item = ({
       justifyContent="center"
       flexDirection="column"
     >
-      <Image
-        style={{ alignSelf: 'center' }}
-        src={NGO}
-        alt={`${item.name} preview`}
-        width={600}
-        height={338}
-      />
+      <a
+        target="_blank"
+        href={item.page}
+        style={{ alignSelf: 'center', cursor: 'pointer' }}
+      >
+        <Image
+          src={NGO}
+          alt={`${item.name} preview`}
+          width={600}
+          height={338}
+        />
+      </a>
       <Typography variant="h6" alignSelf="center" marginTop="1rem">
         {item.name}
       </Typography>

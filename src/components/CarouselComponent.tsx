@@ -8,6 +8,7 @@ type ProjectsItem = {
   id: number;
   name: string;
   description: string;
+  page: string;
 };
 
 const CarouselComponent = () => {
@@ -33,8 +34,8 @@ const CarouselComponent = () => {
       navButtonsProps={{
         style: {
           backgroundColor: 'white',
-          color: "black"
-        }
+          color: 'black',
+        },
       }}
       //   navButtonsWrapperProps={{
       //     style: {

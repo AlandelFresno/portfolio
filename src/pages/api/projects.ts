@@ -6,20 +6,21 @@ const getProjects = async (req: NextApiRequest, res: NextApiResponse) => {
     case 'GET':
       const [resultGet] = await pool.query('SELECT * FROM projects');
       console.log(resultGet);
-      res.json({ hello: 'worlddddd', result: resultGet });
+      res.json({ result: resultGet });
       break;
 
     case 'POST':
-      const { name, description } = req.body;
+      const { name, description, page } = req.body;
       try {
         const [resultPost] = await pool.query('INSERT INTO projects SET ?', {
           name,
           description,
+          page,
         });
         res
           .status(200)
           // @ts-ignore
-          .json({ name, description, id: resultPost.insertId });
+          .json({ name, description, page, id: resultPost.insertId });
       } catch (error: any) {
         res.status(500).json({ error: error.message });
       }
